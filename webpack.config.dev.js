@@ -24,11 +24,10 @@ module.exports = {
         loaders: ['babel-loader'],
         include: path.join(__dirname, 'client')
       },
-      // CSS
+      // SCSS
       {
-        test: /\.css$/,
-        include: path.join(__dirname, 'client'),
-        loader: 'style-loader!css-loader'
+        test: /\.scss$/,
+        loaders: ['style-loader', 'css-loader', 'sass-loader']
       },
       // Images
       {

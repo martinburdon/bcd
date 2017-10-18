@@ -33,11 +33,10 @@ module.exports = {
         loaders: ['babel'],
         include: path.join(__dirname, 'client')
       },
-      // CSS
+      // SCSS
       {
-        test: /\.styl$/,
-        include: path.join(__dirname, 'client'),
-        loader: 'style-loader!css-loader!stylus-loader'
+        test: /\.scss$/,
+        loaders: ['style-loader', 'css-loader', 'sass-loader']
       },
       // Images
       {

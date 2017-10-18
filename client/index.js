@@ -5,7 +5,7 @@ import { Provider } from 'react-redux'
 import App from './components/App'
 import rootReducer from './reducers'
 
-import './style.css';
+import './style.scss';
 
 // Default data
 // import collections from './data/collections.js';
