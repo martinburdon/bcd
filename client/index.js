@@ -5,6 +5,8 @@ import { Provider } from 'react-redux'
 import App from './components/App'
 import rootReducer from './reducers'
 
+import './style.css';
+
 // Default data
 // import collections from './data/collections.js';
 // import minifigures from './data/minifigures.js';
